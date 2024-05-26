@@ -1,20 +1,23 @@
-This is a basic portal created using HTML,CSS,js for frontend and node js express for backend with MYSQL connectivity
-The website obtains student information and stores it in the database
+This is a basic portal created using HTML,CSS,js for frontend and node js express for backend with MYSQL connectivity.
+The website obtains student information and stores it in the database.
 The file structure:
-student-portal-
-               |- backend
+student-portal->
+               |->> backend
                |         |- index.js
                |         |- node modules
                |         |- package.json
                |         |- package lock
                |        
                |
-               |- frontend
+               |->> frontend
                |          |- apps.js
                |          |- index.html
                |          |- styles.css
                |
 
+The package can be added into the files by "npm install" command in your desired directory.
+To start the frontend server type "npm start" in command prompt frontend directory.
+To start the backend server type "node index.js" in command prompt backend director.y
 Mysql table creation should be as follows:
 CREATE DATABASE student_portal;
 CREATE TABLE IF NOT EXISTS students (
@@ -24,6 +27,7 @@ CREATE TABLE IF NOT EXISTS students (
          attendance INT,
          cgpa FLOAT
      );
+Access your appllication at http://localhost:8080
 
 Here's the demonstration of its working
 Page display:
